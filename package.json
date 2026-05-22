@@ -1,0 +1,47 @@
+{
+	"name": "credat-demos",
+	"version": "0.0.0",
+	"private": true,
+	"description": "Runnable end-to-end demos for Credat — agent identity, delegation, and scoped access.",
+	"type": "module",
+	"scripts": {
+		"demo": "tsx src/demo.ts",
+		"typecheck": "tsc --noEmit",
+		"lint": "biome check src/",
+		"lint:fix": "biome check --write src/"
+	},
+	"keywords": [
+		"credat",
+		"ai-agents",
+		"demo",
+		"mcp",
+		"langchain",
+		"delegation",
+		"trust"
+	],
+	"author": "Maxime Mansiet",
+	"license": "Apache-2.0",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/credat/credat-demos.git"
+	},
+	"engines": {
+		"node": ">=20.9.0"
+	},
+	"dependencies": {
+		"@credat/langchain": "^0.1.1-alpha.1",
+		"@credat/mcp": "^0.3.0-alpha.1",
+		"@credat/sdk": "^0.3.0-alpha.1",
+		"@langchain/core": "^0.3.0",
+		"@modelcontextprotocol/sdk": "^1.27.0",
+		"picocolors": "^1.1.1",
+		"zod": "^3.25.0"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "^2.4.0",
+		"@langchain/anthropic": "^0.3.0",
+		"@types/node": "^22.0.0",
+		"tsx": "^4.19.2",
+		"typescript": "^5.9.3"
+	}
+}
