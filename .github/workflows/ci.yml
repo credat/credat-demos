@@ -29,5 +29,8 @@ jobs:
       - name: Typecheck
         run: npm run typecheck
 
-      - name: Run the demo
+      - name: Run the MCP demo
         run: npm run demo
+
+      - name: Run the HTTP demo
+        run: npm run demo:http
